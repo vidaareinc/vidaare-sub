@@ -1,0 +1,34 @@
+{
+  "socialMediaLinks": [
+    {
+      "name": "Facebook",
+      "imagePath": "/FB_quicklinks.png",
+      "url": "https://www.facebook.com"
+    },
+    {
+      "name": "X",
+      "imagePath": "/X_quicklinks.png",
+      "url": "https://www.twitter.com"
+    },
+    {
+      "name": "Instagram",
+      "imagePath": "/IG_quicklinks.png",
+      "url": "https://www.instagram.com"
+    },
+    {
+      "name": "LinkedIn",
+      "imagePath": "/LinkedIn_quicklinks.png",
+      "url": "https://www.linkedin.com"
+    },
+    {
+      "name": "YouTube",
+      "imagePath": "/YT_quiclinks.png",
+      "url": "https://www.youtube.com"
+    },
+    {
+      "name": "Twitch",
+      "imagePath": "/Twitch_quicklinks.png",
+      "url": "https://www.twitch.tv"
+    }
+  ]
+}

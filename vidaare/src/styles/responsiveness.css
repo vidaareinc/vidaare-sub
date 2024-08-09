@@ -1,0 +1,25 @@
+.feature-card {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.img-container {
+  height: auto;
+}
+
+@media (min-width: 340px) and (max-width: 680px) {
+  .feature-card {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .feature-img {
+    display: none;
+  }
+
+  .feature-title {
+    font-size: 3rem;
+  }
+}

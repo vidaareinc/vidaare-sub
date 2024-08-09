@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap");
+
+.logo {
+  font-family: "Inknut Antiqua", serif;
+}
+
+/* Dashboard */
+.layout-bg {
+  background-color: linear-gradient(
+    90deg,
+    rgba(224, 225, 226, 0) 0%,
+    #e0e1e2 49.52%,
+    rgba(224, 225, 226, 0.15625) 99.04%
+  );
+}
+
+/* Navigation */
+.nav-bg {
+  background: linear-gradient(
+    126.97deg,
+    rgba(10, 37, 64, 0.74) 28.26%,
+    rgba(10, 37, 64, 0.5) 91.2%
+  );
+}
+
+.navlogo-bg {
+  background-image: url("../assets/images/Main/NavLogo.png");
+  background-position: center;
+  background-size: cover;
+}
+/* Quick Links */
+.quicklinks-bg {
+  background: linear-gradient(
+    126.97deg,
+    rgba(10, 37, 64, 0.74) 28.26%,
+    rgba(10, 37, 64, 0.5) 91.2%
+  );
+}
+
+/* Video Creation */
+.vid-bg {
+  background: url("../assets/images/Main/VidCreation.jpg");
+  background-position: left;
+  background-size: 80vh;
+  background-position-x: -60px;
+}
+
+/* Stats */
+/* .coming-soon {
+  background-image: url("../assets/images/Main/ComingSoon.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+} */
