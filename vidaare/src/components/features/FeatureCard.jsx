@@ -15,7 +15,7 @@ const FeatureCard = ({ title, description, imageUrl, onClick }) => {
         <p className="text-gray-700 text-base">{description}</p>
         <div className="mt-4 text-right">
           <button
-            className="text-blue-700 hover:text-blue-300"
+            className="text-blue-700 hover:text-blue-500"
             onClick={onClick}
           >
             Read More

@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../../styles/styles.css";
 import EmailModal from "../modals/EmailModal";
 import { Link } from "react-router-dom";
+import logo from '../../assets/logo.png'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,8 +15,12 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center p-4 md:p-8 bg-transparent relative">
       {/* Logo */}
-      <Link to="/" className="text-2xl md:text-3xl text-white uppercase font-bold">
-        Vidaare
+      <Link
+        to="/"
+        className="flex items-center text-2xl md:text-3xl text-white"
+      >
+        <img src={logo} alt="Logo" className="mr-2 w-8"/>
+        <p className="font-polaris">vidaare</p>
       </Link>
 
       {/* Menu Button for Small Screens */}

@@ -23,12 +23,6 @@
   );
 }
 
-.navlogo-bg {
-  background-image: url("../assets/images/Main/NavLogo.png");
-  background-position: center;
-  background-size: cover;
-}
-/* Quick Links */
 .quicklinks-bg {
   background: linear-gradient(
     126.97deg,
@@ -36,19 +30,3 @@
     rgba(10, 37, 64, 0.5) 91.2%
   );
 }
-
-/* Video Creation */
-.vid-bg {
-  background: url("../assets/images/Main/VidCreation.jpg");
-  background-position: left;
-  background-size: 80vh;
-  background-position-x: -60px;
-}
-
-/* Stats */
-/* .coming-soon {
-  background-image: url("../assets/images/Main/ComingSoon.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-} */

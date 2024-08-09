@@ -8,6 +8,9 @@ import Footer from "../components/footer/Footer";
 import EmailModal from "../components/modals/EmailModal";
 import FeatureModal from "../components/modals/FeatureModal";
 
+import image from "../assets/image.mp4"
+import backgroundImage from "../assets/images/LandingPage/LandingPage_BG2.png"
+
 export default function Landing() {
   const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
   const [isFeatureModalOpen, setIsFeatureModalOpen] = useState(false);
@@ -46,33 +49,43 @@ export default function Landing() {
   };
   return (
     <>
-      <div className="w-screen h-screen bg-landing-bg bg-cover bg-center flex flex-col justify-between">
-        <Header/>
+    <div className="relative overflow-hidden">
+  <video
+    className="absolute top-0 left-0 w-full h-full object-cover hidden md:block"
+    autoPlay
+    muted
+    loop
+  >
+    <source src={image} type="video/mp4" />
+  </video>
+  <div className="relative z-10">
+    <div className="w-screen h-screen bg-landing-bg bg-cover bg-center flex flex-col justify-between">
+          <Header/>
 
-        <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col justify-center items-start text-white h-screen ">
-          <hr className="w-24 border-8 mb-4 sm:w-18 " />
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-left">
-            Amplify your content,
-            <br />maximize your reach
-          </h1>
-          <p className="mt-4 text-lg md:text-xl">
-            Schedule, track and post your videos across all platforms in one
-            place, and watch your content royalty grow!
-          </p>
-          <button
-            onClick={() => setIsEmailModalOpen(true)}
-            className="bg-transparent text-white mt-8 px-4 py-2 rounded border border-white hover:text-slate-500 md:w-[150px] md:mt-6 lg:mt-8"
-          >
-            Learn More
-          </button>
-          {/* Email Modal */}
-          <EmailModal
-            isOpen={isEmailModalOpen}
-            onClose={() => setIsEmailModalOpen(false)}
-          />
-        </div>
-      </div>
-      <div className="container mx-auto px-4 md:px-8 lg:px-16 py-12 font-bold">
+          <div className="container mx-auto px-4 md:px-8 lg:px-16 flex flex-col justify-center items-start text-white h-screen ">
+            <hr className="w-24 border-8 mb-4 sm:w-18 " />
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-left">
+              Amplify your content,
+              <br />maximize your reach
+            </h1>
+            <p className="mt-4 text-lg md:text-xl">
+              Schedule, track and post your videos across all platforms in one
+              place, and watch your content royalty grow!
+            </p>
+            <button
+              onClick={() => setIsEmailModalOpen(true)}
+              className="bg-transparent text-white mt-8 px-4 py-2 rounded border border-white hover:bg-white hover:text-black transition-colors md:w-[150px] md:mt-6 lg:mt-8"
+            >
+              Learn More
+            </button>
+            {/* Email Modal */}
+            <EmailModal
+              isOpen={isEmailModalOpen}
+              onClose={() => setIsEmailModalOpen(false)}
+            />
+          </div>
+    </div>
+    <div className="container mx-auto px-4 md:px-8 lg:px-16 py-12 font-bold">
         <h1 className="text-3xl md:text-4xl">Features</h1>
         <div className="flex flex-col md:flex-row md:flex-wrap justify-center md:justify-evenly gap-8 mt-8">
           {features.map((feature, index) => (
@@ -93,6 +106,10 @@ export default function Landing() {
         />
       </div>
       <Footer />
+  </div>
+</div>
+
+
     </>
   );
 }
